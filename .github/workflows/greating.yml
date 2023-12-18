@@ -1,10 +1,10 @@
 name:hello
 on:push
 jobs:
- myjob:
-  runs-on:ubuntu-latest
-  steps:
-    -name:print triggered event
-     run:echo"the job was triggered by ${{github.evevt-name}}."
-    -name: Print the OS of the runner
-     run: echo " This job is running on a ${{ runner.os }} server "
+  myjob:
+    runs-on:ubuntu-latest
+    steps:
+      - name:print triggered event
+        run:echo"the job was triggered by ${{github.evevt-name}}."
+      - name: Print the OS of the runner
+        run: echo " This job is running on a ${{ runner.os }} server "
