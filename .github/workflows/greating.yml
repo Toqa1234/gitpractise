@@ -1,6 +1,6 @@
 name:hello
 on:push
-job:
+jobs:
  myjob:
   runs-on:ubuntu-latest
   steps:
